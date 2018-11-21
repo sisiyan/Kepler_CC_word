@@ -34,8 +34,10 @@ The API should enable users to perform the following actions:
 Set up the virtual environment using Virtualenv.
 1) Make sure python 3.5 or 3.6 was installed on your linux machine.
 2) On your machine, open a terminal and type
-$ pip install virtualenv
-Message "Successfully installed virtualenv-16.1.0" will be displayed in the terminal after installation.
+
+    $ pip install virtualenv
+
+   Message "Successfully installed virtualenv-16.1.0" will be displayed in the terminal after installation.
 3) Create a directory for this app, and create a virtual environment for the app. Type in command line
 $ mkdir syan_codingExcercise
 $ cd syan_codingExcercise

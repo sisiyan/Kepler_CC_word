@@ -68,3 +68,45 @@ Set up the virtual environment using Virtualenv.
        $ pip install -r requirements.txt
 
 ## Running the application
+1) In the Kepler_CC_word directory, type
+
+       $ python3 run.py
+
+2) Input http://localhost:5000 or http://0.0.0.0:5000/ in your browser. On the webpage, you should see:
+        {info:	"Welcome to Words RESTFUL API!"
+         name:	"Homepage of Words RESTFUL API"
+         version:	"1.0"}
+
+3) Manually try each function on the browser.
+* The randomly picking word function:
+  Type http://0.0.0.0:5000/words/randomword?input=April,May,June,July in the browser.
+  Refresh multiple times, and you will see different word picked from time to time.
+
+* Finding the rhyming words function:
+  Type http://0.0.0.0:5000/words/rhyme?input=text in your browser.
+  You will see a list of words rhyming with "text":
+  { 0:	"annexed"
+    1:	"flexed"
+    2:	"hext"
+    3:	"kekst"
+    4:	"next"
+    5:	"perplexed"
+    6:	"sexed"
+    7:	"teletext"
+    8:	"vexed"}
+
+* The word stemming function:
+  Type http://0.0.0.0:5000/words/stem?input=test,tested,tests in your browser.
+  You will see the stemmed word for each input word:
+  { 0:	"test"
+    1:	"test"
+    2:	"test"}
+
+## The automated tests on more test cases.
+1) If the API service is not currently running, go to the Kepler_CC_word directory, start the service.
+
+       $ python3 run.py
+
+2) Go to the tests directory, and run the test.sh script.
+       $ cd tests
+       $ ./test.sh

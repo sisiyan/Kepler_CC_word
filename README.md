@@ -41,7 +41,9 @@ Set up the virtual environment using Virtualenv.
 3) Create a directory for this app, and create a virtual environment for the app. Type in command line
 
     $ mkdir syan_codingExcercise
+
     $ cd syan_codingExcercise
+
     $ virtualenv --python=/usr/bin/pythonX.Y flaskAPI_env
 
     (Use your python version to replace X and Y.)
@@ -52,6 +54,7 @@ Set up the virtual environment using Virtualenv.
 4) Clone this repo on your computer or cluster. Then, go to the git directory.
 
        $ git clone https://github.com/sisiyan/Kepler_CC_word.git
+       
        $ cd Kepler_CC_word
 
 5) Activate the environment flaskAPI_envType, by typing in command line

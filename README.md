@@ -110,7 +110,7 @@ Set up the virtual environment using Virtualenv.
 
        $ python3 run.py
 
-2) Go to the tests directory, and run the test.sh script.
+2) Open another terminal. Go to the tests directory, and run the test.sh script.
 
        $ cd tests
        $ ./test.sh

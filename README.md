@@ -73,6 +73,7 @@ Set up the virtual environment using Virtualenv.
        $ python3 run.py
 
 2) Input http://localhost:5000 or http://0.0.0.0:5000/ in your browser. On the webpage, you should see:
+
         {info:	"Welcome to Words RESTFUL API!"
          name:	"Homepage of Words RESTFUL API"
          version:	"1.0"}
@@ -85,22 +86,24 @@ Set up the virtual environment using Virtualenv.
 * Finding the rhyming words function:
   Type http://0.0.0.0:5000/words/rhyme?input=text in your browser.
   You will see a list of words rhyming with "text":
-  { 0:	"annexed"
-    1:	"flexed"
-    2:	"hext"
-    3:	"kekst"
-    4:	"next"
-    5:	"perplexed"
-    6:	"sexed"
-    7:	"teletext"
-    8:	"vexed"}
+
+      { 0:	"annexed"
+        1:	"flexed"
+        2:	"hext"
+        3:	"kekst"
+        4:	"next"
+        5:	"perplexed"
+        6:	"sexed"
+        7:	"teletext"
+        8:	"vexed"}
 
 * The word stemming function:
   Type http://0.0.0.0:5000/words/stem?input=test,tested,tests in your browser.
   You will see the stemmed word for each input word:
-  { 0:	"test"
-    1:	"test"
-    2:	"test"}
+
+      { 0:	"test"
+        1:	"test"
+        2:	"test"}
 
 ## The automated tests on more test cases.
 1) If the API service is not currently running, go to the Kepler_CC_word directory, start the service.
@@ -108,5 +111,6 @@ Set up the virtual environment using Virtualenv.
        $ python3 run.py
 
 2) Go to the tests directory, and run the test.sh script.
+
        $ cd tests
        $ ./test.sh

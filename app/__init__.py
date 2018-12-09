@@ -89,9 +89,6 @@ def rhyming_words():
     rhyming_words = RhymeWords.find_rhyming_words(words[0])
     return make_response(jsonify(rhyming_words), status.HTTP_200_OK)
 
-    word = RandomWord.generate_random_word(words)
-    return make_response(jsonify({"randomly picked word": word}), status.HTTP_200_OK)
-
 """
   Generate root words for the input words
 """

@@ -7,7 +7,7 @@ This repository includes the documents and code for implementing a restful API f
 The API should enable users to perform the following actions:
  1) User provides 2 or more words to the server, and the server randomly returns 1 word
  2) User provides 1 English word, and server returns a list of English words that rhyme with that word
- 3) Add an endpoint that does something cool. This API will encrypt a word with RSA
+ 3) Add an endpoint that does something cool. This API will return the stems of the input words.
 
 ### Other requirements:
  1) The application should be able to run on Ubuntu 18.04.
@@ -20,7 +20,6 @@ The API should enable users to perform the following actions:
  │   ├── models.py
  │    
  ├── tests
- |   ├── README.md
  │   ├── tests.sh
  │  
  ├── README.md
@@ -99,7 +98,7 @@ Set up the virtual environment using Virtualenv.
 
 * The word stemming function:
   Type http://0.0.0.0:5000/words/stem?input=test,tested,tests in your browser.
-  You will see the stemmed word for each input word:
+  You will see the stem word for each input word:
 
       { 0:	"test"
         1:	"test"
